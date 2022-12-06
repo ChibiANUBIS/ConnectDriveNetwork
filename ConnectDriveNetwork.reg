@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+; Connect Drive Network - Chibi ANUBIS
+; Here change if you want to use a local account yes/no and you can remove USERNAME and PWD if is yes
+[HKEY_CURRENT_USER\SOFTWARE\ConnectDriveNetwork]
+"USERNAME"="domain\\Mike Brant"
+"PWD"="music"
+"LOCALACCOUNT"="no"
+
+; Here change all you need and activated by 0 or 1
+; Insert a new line with new numbers +1 for more drives
+[HKEY_CURRENT_USER\SOFTWARE\ConnectDriveNetwork\1]
+"Activated"=dword:00000001
+"LETTER"="W"
+"NETWORK"="\\\\My-PC\\test1"
+
+[HKEY_CURRENT_USER\SOFTWARE\ConnectDriveNetwork\2]
+"Activated"=dword:00000001
+"LETTER"="X"
+"NETWORK"="\\\\My-PC\\test2"
